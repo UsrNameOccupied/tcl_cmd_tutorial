@@ -42,6 +42,6 @@ gcc -fPIC -shared -o libhello.so hello.c -ltcl
 ###3、调用自定义命令，根据load指令后的寻找入口函数，如Example_Init
 ```
 takchi@ubuntu:~$ tclsh
-% load ./libtcl.so Example
+% load ./libhello.so Example
 % pow 3 9
 ```
